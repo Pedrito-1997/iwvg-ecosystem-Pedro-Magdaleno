@@ -15,3 +15,12 @@ script:
 
   #SONARCLOUD
   - mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=pedrito-1997 -Dsonar.login=$SONAR
+
+#Deploy https://iwvg-ecosystem.herokuapp.com/api https://git.heroku.com/iwvg-ecosystem-pedro-magdaleno.git
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU
+  on:
+    branch: master
+app: iwvg-ecosystem-pedro-magdaleno
