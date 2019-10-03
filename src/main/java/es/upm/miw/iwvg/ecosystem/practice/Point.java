@@ -55,5 +55,10 @@ public class Point {
     public void setY(int y) {
         this.y = y;
     }
+
+    public double distance(Point otherPoint) {
+        return Math.sqrt((double) ((otherPoint.getX() - this.x) * (otherPoint.getX() - this.x)) + ((otherPoint.getY() - this.y) * (otherPoint.getY() - this.y)) );
+    }
+
 }
 

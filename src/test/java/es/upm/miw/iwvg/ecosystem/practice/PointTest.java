@@ -63,4 +63,10 @@ class PointTest {
         assertEquals(4, point.getY());
     }
 
+    @Test
+    void testDistance() {
+        Point otherPoint = new Point(2, 5);
+        assertEquals(2.0, point.distance(otherPoint));
+    }
+
 }
