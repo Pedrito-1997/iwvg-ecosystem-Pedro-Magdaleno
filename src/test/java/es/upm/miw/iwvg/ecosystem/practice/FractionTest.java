@@ -29,5 +29,21 @@ public class FractionTest {
         assertEquals(0.25, fraction.decimal());
     }
 
+    @Test
+    public void testIspropia() {
+        assertEquals(true, fraction.isPropia());
+    }
+
+    @Test
+    public void testEquivalent() {
+        Fraction otherFraction = new Fraction(2, 8);
+        assertEquals(true, fraction.equivalent(otherFraction));
+    }
+
+    @Test
+    public void testIsMayor() {
+        Fraction otherFraction = new Fraction(1, 6);
+        assertEquals(true, fraction.isMayor(otherFraction));
+    }
 
 }

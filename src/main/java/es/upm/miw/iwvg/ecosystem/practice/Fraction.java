@@ -26,4 +26,24 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isPropia() {
+        return this.numerator <= this.denominator;
+    }
+
+    public boolean equivalent(Fraction otherFraction) {
+        int product1 = this.numerator*otherFraction.getDenominator();
+        int product2 = this.denominator*otherFraction.getNumerator();
+        if (product1 == product2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isMayor(Fraction otherFraction) {
+        double parte1 = (double) this.numerator/this.denominator;
+        double parte2 = (double) otherFraction.getNumerator()/otherFraction.getDenominator();
+        return parte1 > parte2;
+    }
+
 }
