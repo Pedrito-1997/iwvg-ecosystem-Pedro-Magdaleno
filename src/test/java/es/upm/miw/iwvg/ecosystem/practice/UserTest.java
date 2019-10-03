@@ -36,5 +36,10 @@ public class UserTest {
         assertEquals("PEDRO", user.getUpperName());
     }
 
+    @Test
+    public void testFullReverseName() {
+        assertEquals("Magdaleno Pedro", user.fullReverseName());
+    }
+
 }
 
