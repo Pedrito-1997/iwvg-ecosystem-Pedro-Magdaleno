@@ -29,5 +29,10 @@ public class FractionTest {
         assertEquals(0.25, fraction.decimal());
     }
 
+    @Test
+    public void testIspropia() {
+        assertEquals(true, fraction.isPropia());
+    }
+
 
 }
