@@ -23,7 +23,6 @@ public class DecimalCollection {
     public double sum() {
         this.validateIsNullOrEmpty();
         return this.collection.stream().mapToDouble(Double::doubleValue).sum();
-
     }
 
     private void validateIsNullOrEmpty() {
@@ -35,6 +34,15 @@ public class DecimalCollection {
     public double higher() {
         this.validateIsNullOrEmpty();
         return Collections.max(this.collection);
+    }
+
+    public double minor() {
+        this.validateIsNullOrEmpty();
+        return Collections.min(this.collection);
+    }
+
+    public boolean remove(double value) {
+        return this.collection.remove(value);
     }
 
 }
