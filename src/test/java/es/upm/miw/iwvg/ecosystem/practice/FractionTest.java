@@ -40,4 +40,10 @@ public class FractionTest {
         assertEquals(true, fraction.equivalent(otherFraction));
     }
 
+    @Test
+    public void testIsMayor() {
+        Fraction otherFraction = new Fraction(1, 6);
+        assertEquals(true, fraction.isMayor(otherFraction));
+    }
+
 }
