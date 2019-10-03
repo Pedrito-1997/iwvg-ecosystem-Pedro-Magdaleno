@@ -40,10 +40,4 @@ public class Fraction {
         }
     }
 
-    public boolean isMayor(Fraction otherFraction) {
-        double parte1 = (double) this.numerator/this.denominator;
-        double parte2 = (double) otherFraction.getNumerator()/otherFraction.getDenominator();
-        return parte1 > parte2;
-    }
-
 }
