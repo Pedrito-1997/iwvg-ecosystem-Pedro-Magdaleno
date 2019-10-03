@@ -55,4 +55,12 @@ class PointTest {
         assertEquals("Point{x=2, y=3}", point.toString());
     }
 
+    @Test
+    void testSetters() {
+        this.point.setX(3);
+        this.point.setY(4);
+        assertEquals(3, point.getX());
+        assertEquals(4, point.getY());
+    }
+
 }
