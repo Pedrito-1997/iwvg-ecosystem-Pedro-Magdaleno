@@ -51,4 +51,9 @@ class DecimalCollectionTest {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
 
+    @Test
+    void testMinor() {
+        assertEquals(-1.0, this.decimalCollection.minor(), 10e-5);
+    }
+
 }
