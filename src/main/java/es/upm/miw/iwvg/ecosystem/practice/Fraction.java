@@ -30,4 +30,14 @@ public class Fraction {
         return this.numerator <= this.denominator;
     }
 
+    public boolean equivalent(Fraction otherFraction) {
+        int product1 = this.numerator*otherFraction.getDenominator();
+        int product2 = this.denominator*otherFraction.getNumerator();
+        if (product1 == product2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
