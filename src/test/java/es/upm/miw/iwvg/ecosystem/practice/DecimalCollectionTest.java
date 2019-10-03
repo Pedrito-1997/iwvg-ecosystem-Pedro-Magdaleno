@@ -56,4 +56,10 @@ class DecimalCollectionTest {
         assertEquals(-1.0, this.decimalCollection.minor(), 10e-5);
     }
 
+    @Test
+    void testRemove() {
+        assertEquals(true, this.decimalCollection.remove(2.0));
+        assertEquals(3, this.decimalCollection.size());
+    }
+
 }

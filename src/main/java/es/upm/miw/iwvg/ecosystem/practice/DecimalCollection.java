@@ -41,4 +41,8 @@ public class DecimalCollection {
         return Collections.min(this.collection);
     }
 
+    public boolean remove(double value) {
+        return this.collection.remove(value);
+    }
+
 }
